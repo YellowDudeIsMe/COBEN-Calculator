@@ -29,7 +29,7 @@ else {
 
 function modifiedSubsets(list) {
     let finalSubsets = [list];
-    let length1 = list.length
+    let length1 = list.length;
     for (let i = 0; i < length1; i++) {
         let length2 = finalSubsets.length;
         for (let k = 0; k < length2; k++) {
@@ -128,7 +128,7 @@ for (let i = 0; i < coben.length; i++) {
 
 coben.push(lastCoben);
 
-print("------- COBEN ---------------")
+console.log("------- COBEN ---------------");
 for (let i = 0; i < coben.length; i++) {
-    print("Contestant #" + (i + 1) + " : " + (Math.round(coben[i] * Math.pow(10, decimal)) / Math.pow(10, decimal)) + "%");
+    console.log("Contestant #" + (i + 1) + " : " + (Math.round(coben[i] * Math.pow(10, decimal)) / Math.pow(10, decimal)) + "%");
 };
